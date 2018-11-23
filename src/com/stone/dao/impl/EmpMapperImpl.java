@@ -129,7 +129,7 @@ public class EmpMapperImpl implements EmpMapper {
 			//1、use MyBatiUtil get SqlSession instance
 			session = MyBatisUtil.getSqlSession();
 			//2、操作
-			emp = session.selectOne("com.stone.xml.EmpMapper.seelctByMap", map);
+			emp = session.selectOne("com.stone.xml.EmpMapper.selectByMap", map);
 		} finally {
 			//3、SqlSession关闭
 			if (session != null) {

@@ -116,7 +116,7 @@
   <select id="selectByEname" resultType="com.stone.entity.Emp">
   	select * from HR.EMP where ename like '%'||#{ename}||'%'
   </select>
-  <select id="seelctByMap" resultType="com.stone.entity.Emp">
+  <select id="selectByMap" resultType="com.stone.entity.Emp">
   	select * from HR.EMP where empno=#{empno}
   </select>
 </mapper>
